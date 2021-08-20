@@ -19,3 +19,7 @@ a:hover {
 .content ul {
   @apply my-6;
 }
+
+.bg-top-reddit {
+  background-color: #1a1a1b;
+}

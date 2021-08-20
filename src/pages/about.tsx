@@ -1,21 +1,18 @@
+import React from 'react';
+
 import { Meta } from '../layout/Meta';
-import { Main } from '../templates/Main';
+import { Empty } from '../templates/Empty';
 
 const About = () => (
-  <Main meta={<Meta title="Lorem ipsum" description="Lorem ipsum" />}>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione fuga
-      recusandae quidem. Quaerat molestiae blanditiis doloremque possimus labore
-      voluptatibus distinctio recusandae autem esse explicabo molestias officia
-      placeat, accusamus aut saepe.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione fuga
-      recusandae quidem. Quaerat molestiae blanditiis doloremque possimus labore
-      voluptatibus distinctio recusandae autem esse explicabo molestias officia
-      placeat, accusamus aut saepe.
-    </p>
-  </Main>
+  <Empty meta={<Meta title="Lorem ipsum" description="Lorem ipsum" />}>
+    <div>
+      <h1 className="text-2xl">Dashboard</h1>
+      <span className="text-sm text-gray-600">
+        Check all of your information
+      </span>
+      <div className="flex" />
+    </div>
+  </Empty>
 );
 
 export default About;
